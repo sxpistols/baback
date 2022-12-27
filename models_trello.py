@@ -868,11 +868,10 @@ where karyawan.divisi in ('PMO','SDO','RMO') and status='Active' order by karyaw
     and tanggal >= subdate(current_date, 1) \
     order by tanggal desc limit 10;"
             else:
-                query = "select b.name,b.id,tk.fullname,type,substring(CONVERT_TZ(tanggal,'+00:00','+07:00'),1,19) tanggal \
+                query = "select b.name,b.url,b.id,tk.fullname,type,substring(CONVERT_TZ(tanggal,'+00:00','+07:00'),1,19) tanggal \
     from boardactions a, trello_karyawan tk, board b \
     where a.username  = tk.trelloid \
     and b.id = a.board_id  \
-    and tanggal >= subdate(current_date, 1) \
     order by tanggal desc limit 10;"
 
             resultproxy = cur.execute(query)
