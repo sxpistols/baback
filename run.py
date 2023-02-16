@@ -18,11 +18,9 @@ config = {
 }
 
 app = Flask(__name__)
-#CORS(app,supports_credentials=True)
 cors = CORS(app, support_credentials=True)
 api = Api(app)
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://employee:Syabian247#@127.0.0.1/employee'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'fuck-you!'
@@ -48,10 +46,7 @@ mail_settings = {
 app.config.update(mail_settings)
 mail = Mail(app)
 
-#app.config['SECRET_KEY'] = 'fuck you!'
 jwt = JWTManager(app)
-# mysql = MySQL(app)
-# db = MySQL(app)
 db = SQLAlchemy(app)
 
 
@@ -109,7 +104,6 @@ api.add_resource(karyawan.AssignmentUser, '/api/karyawan/assignmentuser')
 api.add_resource(karyawan.AssignmentReportKaryawan, '/api/karyawan/reportassignmentkaryawan')
 api.add_resource(karyawan.DetailAssignment, '/api/karyawan/detailassignment')
 api.add_resource(karyawan.DeleteAssignment, '/api/karyawan/assignment_delete')
-# api.add_resource(karyawan.AssignmentReport, '/api/karyawan/reportassignment')
 api.add_resource(karyawan.cobaEmail, '/api/karyawan/cobaEmail')
 api.add_resource(karyawan.sendEmail, '/api/karyawan/sendemail')
 api.add_resource(karyawan.userReg, '/api/karyawan/mailreg')
