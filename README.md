@@ -1,35 +1,37 @@
-total 1868
--rwxrwxr-x. 1 dolants dolants     127 Dec 14 14:52 views.py
--rwxrwxr-x. 1 dolants dolants   11959 Dec 14 14:52 trello.py
--rw-rw-r--. 1 dolants dolants    8547 Dec 14 14:52 sdo.py
--rwxrwxr-x. 1 dolants dolants    9377 Dec 14 14:52 resources.py
--rwxrwxr-x. 1 dolants dolants   14409 Dec 14 14:52 pmo.py
--rwxrwxr-x. 1 dolants dolants   33004 Dec 14 14:52 karyawan.py
--rw-rw-r--. 1 dolants dolants     486 Dec 14 14:52 genPass.py
--rwxrwxr-x. 1 dolants dolants    2919 Dec 14 14:52 email_kirim.py
--rwxrwxr-x. 1 dolants dolants     392 Dec 14 14:52 app.py
--rwxrwxr-x. 1 dolants dolants    1121 Dec 14 14:52 Role.py
--rw-rw-r--. 1 dolants dolants     216 Dec 14 14:52 scriptBackupDB.sh
--rwxrwxr-x. 1 dolants dolants     282 Dec 14 14:52 run.sh
--rwxrwxr-x. 1 dolants dolants     386 Dec 14 14:52 backupDatabase.sh
--rwxrwxr-x. 1 dolants dolants    3469 Dec 14 14:52 allDetail.sh
--rw-rw-r--. 1 dolants dolants     215 Dec 14 15:18 howto.txt
--rw-rw-r--. 1 dolants dolants     589 Dec 14 15:31 req.txt
-drwxrwxr-x. 5 dolants dolants      82 Dec 14 15:37 venv
--rw-rw-r--. 1 dolants dolants     603 Dec 14 15:39 req.asli.txt
-lrwxrwxrwx. 1 root    root         37 Dec 14 15:40 libmysqlclient.so.18 -> /usr/lib64/mysql/libmysqlclient.so.21
--rwxrwxr-x. 1 dolants dolants   10802 Dec 14 15:49 run.py
--rwxrwxr-x. 1 dolants dolants   47679 Dec 14 15:49 models.py
--rw-rw-r--. 1 dolants dolants   35923 Dec 14 15:49 models_sdo.py
--rwxrwxr-x. 1 dolants dolants   81350 Dec 16 22:59 models_pmo.py
--rw-r--r--. 1 dolants dolants      13 Dec 16 23:10 allDetail.sh.log
--rw-r--r--. 1 dolants dolants       0 Dec 16 23:30 genreport.v2.sh.log
--rwxrwxr-x. 1 dolants dolants   59734 Dec 26 07:35 models_trello.py
-drwxrwxr-x. 2 dolants dolants    4096 Dec 26 07:35 __pycache__
--rw-rw-r--. 1 dolants dolants    6379 Dec 28 02:25 Timesheet_Karyawan_Nov_2022.xlsx
--rw-rw-r--. 1 dolants dolants    5834 Dec 28 02:25 Timesheet_HRD_Karyawan_Nov_2022.xlsx
--rw-rw-r--. 1 dolants dolants    7072 Jan 29 14:34 Timesheet_Karyawan_Dec_2022.xlsx
--rw-rw-r--. 1 dolants dolants    6075 Jan 29 14:34 Timesheet_HRD_Karyawan_Dec_2022.xlsx
--rw-rw-r--. 1 dolants dolants    7151 Jan 30 02:32 Timesheet_Karyawan_Jan_2023.xlsx
--rw-rw-r--. 1 dolants dolants    6079 Jan 30 02:32 Timesheet_HRD_Karyawan_Jan_2023.xlsx
--rw-------. 1 dolants dolants 1469591 Feb  1 01:06 nohup.out
+# Foobar
+
+Foobar is a Python library for dealing with word pluralization.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
+
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
