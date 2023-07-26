@@ -1,6 +1,6 @@
 aniso8601==8.0.0
 blinker==1.4
-certifi==2021.5.30
+certifi==2023.7.22
 chardet==4.0.0
 click==7.1.2
 cycler==0.10.0
